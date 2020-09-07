@@ -1,0 +1,13 @@
+name: Tabifier
+author: 'Ayan Banerjee'
+description: Convert leading whitespaces to tabs
+
+runs:
+  using: 'node12'
+  main: 'index.js'
+
+inputs:
+  tabLength:
+    description: 'Length of tab'
+    required: false
+    default: '4'
