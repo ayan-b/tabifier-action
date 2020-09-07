@@ -1,4 +1,4 @@
-const recursive = require("recursive-readdir");
+const recursive = require("./recursive-readdir");
 const path = require("path");
 const fs = require("fs");
 
