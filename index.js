@@ -1,8 +1,8 @@
-const recursive = require("./recursive-readdir");
+const recursive = require("recursive-readdir");
 const path = require("path");
 const fs = require("fs");
 
-const tabLength = 4 | process.env.INPUT_TABLENGTH;
+const tabLength = process.env.INPUT_TABLENGTH || 4;
 
 function replaceSpacesWithTabs(string) {
     let splittedString = string.split(/\r?\n/);
@@ -32,13 +32,13 @@ function ignoreFunc(file, stats) {
 
 recursive(".", [".gitignore", ignoreFunc], function (err, files) {
     for (let file of files) {
-        fs.readFile(file, 'utf8', function(err, data){ 
+        fs.readFile(file, 'utf8', function (err, data) {
             let tabifiedData = replaceSpacesWithTabs(data);
-            fs.writeFile(file, tabifiedData, function(err){
+            fs.writeFile(file, tabifiedData, function (err) {
                 if (err) {
                     console.log(err);
                 }
             })
-        }); 
+        });
     }
 });
