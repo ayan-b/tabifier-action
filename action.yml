@@ -4,7 +4,7 @@ description: Convert leading whitespaces to tabs.
 
 runs:
   using: 'node12'
-  main: 'index.js'
+  main: 'dist/index.js'
 
 inputs:
   tabLength:
