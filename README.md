@@ -46,7 +46,7 @@ You can see this action in action [here](https://github.com/ayan-b/tabifier-play
 
 Jump responsibly!
 
-![richard-jumping](./assets/richard-jumping.jpg)
+![richard-jumping](./assets/richard-jumping.JPG)
 
 <small><i><a href="https://www.youtube.com/watch?v=SsoOG6ZeyUI">Source</a></i></small>
 
